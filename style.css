@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #E5E5E5;
+  padding: 50px;
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+
+  background: #1b1c22;
+  box-shadow: 10px 9px 10px -3px rgba(0,0,0,0.21);
+}
+
+#calculator button {
+  background: #273547;
+  color: #FFFFFF;
+  border-radius: 10px;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+
+#calculator form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#calculator form #display {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  background: #2f3133;
+  color: #fafafa;
+  height: 70px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  
+}
+
+#calculator form #buttonsGrid {
+  display: flex;
+  align-items: baseline;
+}
+
+#calculator form #buttonsGrid #numbersGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#calculator form #buttonsGrid #operatorsGrid {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 20px;
+}
+
+
