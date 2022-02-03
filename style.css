@@ -1,10 +1,22 @@
+:root {
+  --page_background: #9da6c1;
+  
+  --display: #BA10F5;
+  --display_number: #ffffff;
+
+  --number: #000000;
+  --number_buttons: #ffffff;
+  --operator_button: #f0f0f0;
+  --buttons_hover: rgba(16,171,245,0.8);
+}
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 body {
@@ -13,7 +25,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #E5E5E5;
+  background: var(--page_background);
   padding: 50px;
 }
 
@@ -23,20 +35,41 @@ body {
   align-items: center;
 
   max-width: 400px;
-  padding: 30px;
-  border-radius: 10px;
 
-  background: #1b1c22;
+  border-radius: 10px 10px 0 0;
+
+  background: white;
   box-shadow: 10px 9px 10px -3px rgba(0,0,0,0.21);
 }
 
 #calculator button {
-  background: #273547;
-  color: #FFFFFF;
-  border-radius: 10px;
-  height: 60px;
-  width: 60px;
+  height: 80px;
+  width: 80px;
   cursor: pointer;
+  transition: .2s linear;
+}
+
+.numbersButton {
+  background-color: var(--number_buttons);
+  color: var(--number);
+}
+
+.numbersButton:hover {
+  background-color: var(--buttons_hover);
+}
+
+.operatorButton {
+  background-color: var(--operator_button);
+  color: var(--number);
+
+}
+
+.operatorButton:hover {
+  background-color: var(--buttons_hover);
+}
+
+.submitButton {
+  background: linear-gradient(45deg, rgba(128,19,115,1) 0%, rgba(16,171,245,1) 100%);
 }
 
 #calculator form {
@@ -50,16 +83,21 @@ body {
 
 #calculator form #display {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
-  padding-right: 20px;
-  background: #2f3133;
-  color: #fafafa;
-  height: 70px;
+
+  padding: 0 10px 2px 0;
+  border-radius: 10px 10px 0 0;
+
+  color: var(--display_number);
+  opacity: 0.8;
+
+  height: 110px;
   width: 100%;
-  margin-bottom: 30px;
-  border-radius: 8px;
+
+  font-size: 1.5rem;
   
+  background: linear-gradient(45deg, rgba(128,19,115,1) 0%, rgba(16,171,245,1) 100%);
 }
 
 #calculator form #buttonsGrid {
@@ -70,14 +108,11 @@ body {
 #calculator form #buttonsGrid #numbersGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
 }
 
 #calculator form #buttonsGrid #operatorsGrid {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
-  gap: 20px;
 }
 
 

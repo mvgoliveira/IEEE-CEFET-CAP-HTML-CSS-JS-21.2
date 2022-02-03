@@ -18,29 +18,29 @@
 
       <article id="buttonsGrid">
         <article id="numbersGrid">
-          <button type="button" onclick="erase()"> C </button>
-          <button type="button">  </button>
-          <button type="button">  </button>
-          <button type="button" onclick="addNumber('7')"> 7 </button>
-          <button type="button" onclick="addNumber('8')"> 8 </button>
-          <button type="button" onclick="addNumber('9')"> 9 </button>
-          <button type="button" onclick="addNumber('4')"> 4 </button>
-          <button type="button" onclick="addNumber('5')"> 5 </button>
-          <button type="button" onclick="addNumber('6')"> 6 </button>
-          <button type="button" onclick="addNumber('1')"> 1 </button>
-          <button type="button" onclick="addNumber('2')"> 2 </button>
-          <button type="button" onclick="addNumber('3')"> 3 </button>
-          <button type="button">  </button>
-          <button type="button" onclick="addNumber('0')"> 0 </button>
-          <button type="button">  </button>
+          <button type="button" class="operatorButton" onclick="erase()"> C </button>
+          <button type="button" class="operatorButton">  </button>
+          <button type="button" class="operatorButton">  </button>
+          <button type="button" class="numbersButton" onclick="addNumber('7')"> 7 </button>
+          <button type="button" class="numbersButton" onclick="addNumber('8')"> 8 </button>
+          <button type="button" class="numbersButton" onclick="addNumber('9')"> 9 </button>
+          <button type="button" class="numbersButton" onclick="addNumber('4')"> 4 </button>
+          <button type="button" class="numbersButton" onclick="addNumber('5')"> 5 </button>
+          <button type="button" class="numbersButton" onclick="addNumber('6')"> 6 </button>
+          <button type="button" class="numbersButton" onclick="addNumber('1')"> 1 </button>
+          <button type="button" class="numbersButton" onclick="addNumber('2')"> 2 </button>
+          <button type="button" class="numbersButton" onclick="addNumber('3')"> 3 </button>
+          <button type="button" class="numbersButton">  </button>
+          <button type="button" class="numbersButton" onclick="addNumber('0')"> 0 </button>
+          <button type="button" class="numbersButton">  </button>
         </article>
         
         <article id="operatorsGrid">
-          <button type="button" onclick="addOperator('/')"> / </button>
-          <button type="button" onclick="addOperator('*')"> * </button>
-          <button type="button" onclick="addOperator('-')"> - </button>
-          <button type="button" onclick="addOperator('+')"> + </button>
-          <button type="submit"> = </button>
+          <button type="button" class="operatorButton" onclick="addOperator('/')"> ÷ </button>
+          <button type="button" class="operatorButton" onclick="addOperator('*')"> x </button>
+          <button type="button" class="operatorButton" onclick="addOperator('-')"> - </button>
+          <button type="button" class="operatorButton" onclick="addOperator('+')"> + </button>
+          <button type="submit" class="submitButton"> = </button>
         </article>
       </article>
     </form>
