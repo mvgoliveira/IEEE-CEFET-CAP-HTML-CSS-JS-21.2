@@ -28,7 +28,7 @@ function calculate(event) {
         break;
     } 
 
-    document.getElementById("display").innerHTML = "" + res;
+    document.getElementById("display").innerHTML = "" + res.toFixed(2);
 
     n1 = "" + res;
     n2 = "";

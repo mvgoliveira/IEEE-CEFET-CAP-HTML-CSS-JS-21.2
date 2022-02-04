@@ -1,14 +1,13 @@
 :root {
-  --page_background: #9da6c1;
+  --page_background: linear-gradient(45deg, #1b212c 0%, #32316b 100%);
   
   --display: linear-gradient(45deg, #364873 0%, #9899BD 100%);
-  --display2: linear-gradient(45deg, rgba(128,19,115,1) 0%, rgba(16,171,245,1) 100%);
   --display_number: #ffffff;
 
   --number: #000000;
   --number_buttons: #ffffff;
   --operator_button: #f0f0f0;
-  --buttons_hover: rgba(16,171,245,0.8);
+  --buttons_hover: #5a75b8;
 }
 
 * {
@@ -37,32 +36,37 @@ body {
 
   max-width: 400px;
 
-  border-radius: 10px 10px 0 0;
-
   background: white;
-  box-shadow: 10px 9px 10px -3px rgba(0,0,0,0.21);
+  box-shadow: 10px 9px 10px -3px rgba(0,0,0,0.10);
 }
 
 #calculator button {
   height: 80px;
   width: 80px;
-  cursor: pointer;
-  transition: .2s linear;
+  transition: .1s linear;
+  color: var(--number);
 }
 
 .numbersButton {
   background-color: var(--number_buttons);
-  color: var(--number);
+  cursor: pointer;
 }
 
 .numbersButton:hover {
   background-color: var(--buttons_hover);
 }
 
+.numbersButtonOff {
+  background-color: var(--number_buttons);
+}
+
+.numbersButton #noOperation:hover {
+  background: var(--number_buttons);
+}
+
 .operatorButton {
   background-color: var(--operator_button);
-  color: var(--number);
-
+  cursor: pointer;
 }
 
 .operatorButton:hover {
@@ -71,6 +75,11 @@ body {
 
 .submitButton {
   background: var(--display);
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  filter: brightness(0.90);
 }
 
 #calculator form {
@@ -87,8 +96,7 @@ body {
   align-items: flex-end;
   justify-content: flex-end;
 
-  padding: 0 10px 2px 0;
-  border-radius: 10px 10px 0 0;
+  padding: 0 20px 15px 0;
 
   color: var(--display_number);
 
