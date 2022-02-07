@@ -43,7 +43,6 @@ function erase() {
 }
 
 function addNumber(number) {
-
   if (operator === "") {
     document.getElementById("display").innerHTML += number;
     n1 = document.getElementById("display").innerHTML;
