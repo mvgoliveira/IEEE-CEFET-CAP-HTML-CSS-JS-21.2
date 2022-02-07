@@ -52,6 +52,7 @@ function addNumber(number) {
     n2 = document.getElementById("display").innerHTML;
   } else {
     document.getElementById("display").innerHTML += number;
+    n2 = document.getElementById("display").innerHTML;
   }
 }
 
