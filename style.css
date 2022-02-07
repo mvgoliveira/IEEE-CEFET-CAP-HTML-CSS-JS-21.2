@@ -6,7 +6,7 @@
 
   --number: #000000;
   --number_buttons: #ffffff;
-  --operator_button: #f0f0f0;
+  --operator_button: #e0e0e0;
   --buttons_hover: #5a75b8;
 }
 
@@ -60,7 +60,7 @@ body {
   background-color: var(--number_buttons);
 }
 
-.numbersButton #noOperation:hover {
+.numbersButtonOff:hover {
   background: var(--number_buttons);
 }
 
@@ -71,6 +71,10 @@ body {
 
 .operatorButton:hover {
   background-color: var(--buttons_hover);
+}
+
+.operatorButtonOff {
+  background-color: var(--operator_button);
 }
 
 .submitButton {
