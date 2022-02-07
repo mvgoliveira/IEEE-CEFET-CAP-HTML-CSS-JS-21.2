@@ -1,8 +1,6 @@
 let operator = "";
 let n1 = "";
 let n2 = "";
-let n = 0;
-let isAnswered = false;
 
 function calculate(event) {
   event.preventDefault();
@@ -33,22 +31,18 @@ function calculate(event) {
     n1 = "" + res;
     n2 = "";
     operator = "";
-    isAnswered = true;
   }
   
 }
 
 function erase() {
+  n1 = "";
+  n2 = "";
+  operator = "";
   document.getElementById("display").innerHTML = "";
 }
 
 function addNumber(number) {
-  if (isAnswered) {
-    document.getElementById("display").innerHTML = "";
-    n1 = "";
-  }
-
-  isAnswered = false;
 
   if (operator === "") {
     document.getElementById("display").innerHTML += number;
@@ -63,6 +57,7 @@ function addNumber(number) {
 }
 
 function addOperator(operatorSelected){
-  operator = operatorSelected;
-  isAnswered = false;
+  if (n1 !== "") {
+    operator = operatorSelected;
+  }
 }

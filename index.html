@@ -12,11 +12,11 @@
   <title>Calculadora do Ramo</title>
 </head>
 <body>
-  <span id="calculator">
+  <div id="calculator">
     <form action="" onsubmit="calculate(event)">
-      <article id="display"></article>
+      <span id="display"></span>
 
-      <article id="buttonsGrid">
+      <section id="buttonsGrid">
         <article id="numbersGrid">
           <button type="button" class="operatorButton" onclick="erase()"> C </button>
           <button type="button">  </button>
@@ -42,8 +42,8 @@
           <button type="button" class="operatorButton" onclick="addOperator('+')"> + </button>
           <button type="submit" class="submitButton"> = </button>
         </article>
-      </article>
+      </section>
     </form>
-  </span>
+  </div>
 </body>
 </html>
